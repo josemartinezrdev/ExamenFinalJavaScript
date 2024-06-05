@@ -1,0 +1,111 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(43, 41, 41);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+li {
+  background: #262222;
+  border-radius: 25px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+li:hover {
+  background: #333030;
+}
+
+.options {
+  background-color: #1b1717;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+/* *1 */
+
+.container-imc {
+  background-color: #1b1717;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+.options-imc {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+label {
+  font-size: 1.2em;
+  letter-spacing: 1.5px;
+}
+
+input {
+  height: 30px;
+  width: 200px;
+  border-radius: 10px;
+  border: none;
+}
+
+.calcular {
+  cursor: pointer;
+  background-color: #333030;
+  text-align: center;
+  width: 50%;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.calcular:hover {
+  background: #262222;
+}
+
+.resultados {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.resultados img {
+  width: 20%;
+}
+
+/* *Dos */
+
+.container-gallery {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.container-gallery img {
+  width: 30%;
+}
+

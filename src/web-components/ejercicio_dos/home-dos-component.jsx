@@ -1,7 +1,6 @@
-import React, { createElement, useState } from "react";
+import React, { useEffect, useRef } from "react";
 
 export const ImageGallery = () => {
-  const [imgUrl, setImgUrl] = useState("");
   const urls = [
     "../../../public/obesidad1.png",
     "../../../public/obesidad2.png",
@@ -11,21 +10,37 @@ export const ImageGallery = () => {
     "../../../public/obesidad3.png",
   ];
 
-  const direccion = document.querySelector(".container-gallery");
+  const pase = useRef(false);
 
   function imgs() {
     urls.forEach((url) => {
-      setImgUrl(url);
       const imgCreada = document.createElement("img");
-      console.log(imgCreada);
+      imgCreada.src = url;
+      imgCreada.id = Date.now();
+      const dir = document.querySelector(".container-gallery");
+      dir.append(imgCreada);
     });
   }
 
+  function grande() {
+    console.log("entre");
+  }
+
+  useEffect(() => {
+    if (!pase.current) {
+      imgs();
+      pase.current = true;
+    }
+  }, []);
+
   return (
     <>
-      <div className="container-gallery" onClick={imgs}>
-        Hola
-      </div>
+      <div
+        onClick={() => {
+          grande;
+        }}
+        className="container-gallery"
+      ></div>
     </>
   );
 };

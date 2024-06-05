@@ -109,3 +109,6 @@ input {
   width: 30%;
 }
 
+.grande {
+  scale: 2;
+}

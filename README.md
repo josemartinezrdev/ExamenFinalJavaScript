@@ -1,8 +1,13 @@
-# React + Vite
+# Descripción
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Ejercicio 1
 
-Currently, two official plugins are available:
+`const [imgUrl, setImgUrl] = useState("");`
+`const [IMC, setIMC] = useState("Ingresa datos primero 😢");`
+`const [valor, setValor] = useState(null);`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Usando useState cambio los estados, para ver la url, el imc y el valor del imc.
+
+Luego tengo una funcion calcular, a la cual le paso los valores de los inputs con id peso y altura.
+
+Luego se hace una serie de condiciones para definir en que estado se encuentra la persona y por ultimo se actualizan imgUrl, valor y IMC para que se puedan ver
